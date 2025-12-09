@@ -1,5 +1,5 @@
 "use client";
-
+import ChatWidget from "./ChatWidget";
 import React, { useState } from 'react';
 import { 
   Lightbulb, Calendar, Wallet, Target, Ban, 
@@ -361,19 +361,10 @@ export default function MyPlanPage() {
           </div>
 
         </div>
-
-        {/* Floating Action Button */}
-        <div className="fixed bottom-8 right-8 z-50">
-           <button className="bg-black text-white px-5 py-3 rounded-full shadow-xl flex items-center gap-3 hover:scale-105 transition-transform">
-              <div className="flex text-green-400">
-                 <MessageCircle size={20} fill="currentColor" className="text-green-900" />
-                 <span className="font-bold ml-1">_RK</span>
-              </div>
-              <span className="font-bold text-sm">Ask WealthWiz</span>
-           </button>
-        </div>
+        
 
       </main>
+      <ChatWidget />
     </div>
   );
 }
