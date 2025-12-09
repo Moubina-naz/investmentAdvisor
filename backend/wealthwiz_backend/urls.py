@@ -1,10 +1,10 @@
-"""
-URL configuration for WealthWiz backend.
-"""
+# backend/wealthwiz_backend/urls.py
+
 from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('api/', include('advisor.urls')),
+    path("admin/", admin.site.urls),
+    path("api/learn/", include("learn.urls")),      # ✅ this one
+    path("api/advisor/", include("advisor.urls")),  # whatever you already had
 ]
