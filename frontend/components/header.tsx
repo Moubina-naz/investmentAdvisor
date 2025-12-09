@@ -10,7 +10,7 @@ interface HeaderProps {
 
 const navItems = [
   { label: "Dashboard", href: "/dashboard" },
-  { label: "My Readiness", href: "/readiness" },
+  { label: "My Readiness", href: "/my-readiness" },
   { label: "My Plan", href: "/plan" },
   { label: "Learn", href: "/learn" },
 ]

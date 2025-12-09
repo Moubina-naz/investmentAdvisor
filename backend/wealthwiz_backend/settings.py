@@ -29,6 +29,7 @@ INSTALLED_APPS = [
     'corsheaders',
     # Local apps
     'advisor',
+    'learn'
 ]
 
 MIDDLEWARE = [
